@@ -13,7 +13,7 @@ class AlbumList extends Component {
     render() {
         return (
             <View>
-                <Text>Album List</Text>
+                <Text>Album List Goes here</Text>
             </View>
         )
     }
