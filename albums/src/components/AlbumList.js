@@ -18,7 +18,7 @@ class AlbumList extends Component {
     render() {
         return (
             <View>
-                {this.renderAlbums}
+                {this.renderAlbums()}
             </View>
         )
     }
