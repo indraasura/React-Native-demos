@@ -3,6 +3,7 @@ import { View, Text, Image } from 'react-native'
 import Card from './Card'
 import CardSection from './CardSection'
 import { tsPropertySignature } from '@babel/types';
+import Button from './Button'
 
 const AlbumDetail = ({ album }) =>{
     // Destrucutre props to albums, further destructre albums to individual elements 
@@ -39,6 +40,9 @@ const AlbumDetail = ({ album }) =>{
                     style={imageStyle}
                     source={{ uri: image }}
                  />
+             </CardSection>
+             <CardSection>
+                 <Button />
              </CardSection>
         </Card>
     )
