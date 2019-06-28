@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Linking } from 'react-native'
 import Card from './Card'
 import CardSection from './CardSection'
 import { tsPropertySignature } from '@babel/types';
 import Button from './Button'
+
 
 const AlbumDetail = ({ album }) =>{
     // Destrucutre props to albums, further destructre albums to individual elements 
@@ -18,7 +19,7 @@ const AlbumDetail = ({ album }) =>{
         imageStyle
     } = styles
 
-    const { title,artist, thumbnail_image, image } = album
+    const { title,artist, thumbnail_image, image, url } = album
 
     return (
         <Card>
@@ -42,7 +43,9 @@ const AlbumDetail = ({ album }) =>{
                  />
              </CardSection>
              <CardSection>
-                 <Button />
+                 <Button onPress={() => Linking.openURL(url)}>
+                     Buy now
+                 </Button>
              </CardSection>
         </Card>
     )

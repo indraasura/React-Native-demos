@@ -15,7 +15,7 @@ class AlbumList extends Component {
         return this.state.albums.map(album => 
         <AlbumDetail key={album.title} album={album} />)
     }
-    render() {
+    render() { 
         return (
             <ScrollView>
                 {this.renderAlbums()}
