@@ -10,7 +10,7 @@ class LoginForm extends Component {
                 <CardSection></CardSection>
                 <CardSection>
                     <Button>
-                        Log in
+                        Login
                     </Button>
                 </CardSection>
             </Card>
