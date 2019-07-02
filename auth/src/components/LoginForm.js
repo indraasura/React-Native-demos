@@ -4,7 +4,7 @@ import { Card, CardSection, Button, Input } from './common'
 class LoginForm extends Component {
 
     state = {
-        text: ''
+        email: ''
     }
 
     render() {
@@ -13,8 +13,9 @@ class LoginForm extends Component {
                 <CardSection>
                     <Input
                         label="Email"
-                        value={this.state.text}
-                        onChangeText={text => this.setState({text})}
+                        placeholder="user@gmail.com"
+                        value={this.state.email}
+                        onChangeText={email => this.setState({ email })}
                     />
                 </CardSection>
                 <CardSection></CardSection>
