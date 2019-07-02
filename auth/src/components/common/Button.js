@@ -1,6 +1,5 @@
 import React from 'react'
 import { Text, TouchableOpacity } from 'react-native'
-import { tsPropertySignature } from '@babel/types';
 
 const Button = ({ onPress, children }) => {
     const { buttonStyle, textStyle } = styles
